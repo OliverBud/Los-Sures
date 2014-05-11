@@ -1,13 +1,12 @@
-$(function(){
 
-    //var boxheight = $('.box').height();
-    
-    function clickslide(){
-    }
-    
+
+ //$("#button").onClick(alert("you clicked")); 
+function buttonClicked() {
+
+  $(function(){ 
     var gif = false; 
     var $vsliderboxes = $('#vsliderboxes').children();
-    var slide = function(){
+    function autoslide(){
         var $active = $vsliderboxes.filter('.active');
         if ($active.index() === ($vsliderboxes.length - 1)) {
             //we need to loop back to the beginning
@@ -25,18 +24,18 @@ $(function(){
 
         //if we have finished looping through the images, -2 because you start at the last index.
          if ($active.index()=== ($vsliderboxes.length-2)){
-         clearInterval(slide); 
+         //clearInterval(slide); 
          loadGif();   
          gif = true; 
          }
         console.log("this is the active index"+ $active.index()); 
     }
 
-    setInterval(slide,3000); 
-    
-    //if (gif) 
-    //stop autoslide
+    setInterval(autoslide,3000); 
+
+    //$("#button").click(alert("you clicked")); 
 });
+}
 
 
 function loadGif() {
