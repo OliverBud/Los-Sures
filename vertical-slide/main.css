@@ -1,0 +1,43 @@
+#vslidernav ul {
+    list-style: none;
+    padding: 0;
+}
+#vslidernav ul a {
+    padding: 0;
+    cursor: pointer;
+    height: 50px;
+}
+#vslidernav ul a:active {
+    color: #9C9A99;
+}
+#vslidernav ul a li {
+    height: 50px;
+}
+#vslidernav ul .active li {
+}
+.#vslidernav ul a:active {
+    background: transparent;
+    color: #9C9A99;
+}
+#vslider {
+    width: 1000px;
+}
+#vslidernav {
+    float: left;
+    width: 100px;
+    z-index: 1;
+    height: 250px;
+}
+#vsliderboxes {
+    width: 900px;
+    height: 250px;
+    overflow: hidden;
+}
+#vsliderboxes div {
+    height: 250px;
+    width: 900px;
+}
+#vsliderboxes .active {
+    height: 250px;
+    width: 900px;
+}
